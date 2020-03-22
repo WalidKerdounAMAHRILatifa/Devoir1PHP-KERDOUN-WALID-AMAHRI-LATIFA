@@ -95,14 +95,10 @@
                 $tab1 = explode('|',$ligne1);
 
                 echo '<tr>';
-                    echo '<td>'.$tab1[0].'</td>';
-                    echo '<td>'.$tab1[1].'</td>';
-                    echo '<td>'.$tab1[2].'</td>';
-                    echo '<td>'.$tab1[3].'</td>';
-                    echo '<td>'.$tab1[4].'</td>';
-                    echo '<td>'.$tab1[5].'</td>';
-                    echo '<td>'.$tab1[6].'</td>';
-                    echo '<td>'.$tab1[7].'</td>';
+                for($i = 0;$i<sizeof($tab1);$i++)
+                {
+                    echo '<td>'.$tab1[$i].'</td>';
+                }
                 echo '</tr>';
             }
         ?>
